@@ -385,7 +385,20 @@
           <div class="bg-info p-3" id="dvanacty">            
           </div>
           <script>
-            <!-- Zadejte JS kód -->
+            const Block12 = document.getElementById("dvanacty");
+            const randomNum = Math.floor(Math.random() * 97) + 1;
+            
+            function primeNumber(number) {
+              let i = 2;
+              while (i < number / 2) {
+                if (number % i === 0)
+                  return false;
+                i++;
+              }
+              return true;
+            }
+
+            solutionBlock12.textContent = `Číslo ${randomNumber} ${isPrime(randomNumber) ? "je" : "není"} prvočíslo.`
           </script>
         </div>
       </div>
